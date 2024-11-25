@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        
+        <!-- comment <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    </head>
+
+    <body>
+        
+        <header>
+            <nav>
+                <div class="navbar">
+                    <div>Buscar No Premium </div>
+                    <img id="fotoLogo" alt="Foto del Logo" src ='img/logo_without_background.png'>
+
+                    <div class="navbar-items">
+
+                    </div>
+                    <div id="cerrarSesionContainer">  
+                        <a id="mensajeBienvenida"></a>
+                        <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <button type="button" id="volverBtn">Volver</button>
+            <div class="container">
+                <form id="buscarForm">
+                    <div class="genero-container">
+                        <label for="genero">Que busco?</label>
+                        <select id="genero" name="genero">
+                            <option value="">Seleccione una opción</option>
+                            <option value="H">H</option>
+                            <option value="M">M</option>
+                        </select>
+                    </div>                        
+                    <div class="aficiones-container">
+                        <label>Futbol <input type="checkbox" name="aficion" value="1"></label>
+                        <label>Basket <input type="checkbox" name="aficion" value="2"></label>
+                        <label>Cine <input type="checkbox" name="aficion" value="3"></label>
+                        <label>Leer <input type="checkbox" name="aficion" value="4"></label>
+                        <label>Viajar <input type="checkbox" name="aficion" value="5"></label>
+                        <label>Cocinar <input type="checkbox" name="aficion" value="6"></label>
+                        <label>Senderismo <input type="checkbox" name="aficion" value="7"></label>
+                        <label>Fotografia <input type="checkbox" name="aficion" value="8"></label>
+                        <label>Pintura <input type="checkbox" name="aficion" value="9"></label>
+                        <label>Música <input type="checkbox" name="aficion" value="10"></label>
+                        <label>Gimnasio <input type="checkbox" name="aficion" value="11"></label>
+                        <label>Yoga <input type="checkbox" name="aficion" value="12"></label>
+                        <label>Videojuegos <input type="checkbox" name="aficion" value="13"></label>
+                        <label>Bailar <input type="checkbox" name="aficion" value="14"></label>
+                        <label>Escalar <input type="checkbox" name="aficion" value="15"></label>
+                    </div>
+                    <button type="button" id="buscarBtn">Buscar</button>
+                </form>
+            </div> 
+            <!-- aqui va a salir la tabla con la gente que cumpla el formularío -->
+            <div id="contenedorUsuarios"></div>
+        </main>
+        
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/buscarPorAficion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </body>
+
+</html>

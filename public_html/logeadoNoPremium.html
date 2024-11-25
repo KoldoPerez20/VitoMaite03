@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        
+        <!-- comment <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    </head>
+
+    <body>
+        
+        <header>         
+            <nav>
+                <div class="navbar">
+                    <div>Logueado No Premium </div>
+                    <img id="fotoLogo" alt="Foto del Logo" src ='img/logo_without_background.png'>
+
+                    <div class="navbar-items">
+
+                    </div>
+                    <div id="cerrarSesionContainer">  
+                        <a id="mensajeBienvenida"></a>
+                        <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <!--<div>Aqui tu zona main </div>-->
+            <button type="button" id="modificarPerfilBtn">Modificar Perfil</button>
+            <button type="button" id="aficionesBtn">Aficiones</button>
+            <button type="button" id="misLikesBtn">Mostrar Likes</button>
+            <button type="button" id="misMatchBtn">Mostrar mis Match</button>
+            <button type="button" id="buscarBtn">Buscar Normal</button>
+            <button type="button" id="buscarAfiBtn">Buscar por Aficiones</button>
+            <button type="button" id="buscarMapaBtn">Buscar por Ubicación</button>
+  
+            <div id="contenedorLikes"></div>
+            <div id="contenedorMatch"></div>
+            
+        </main>
+        
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/logeadoNoPremium.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </body>
+
+</html>

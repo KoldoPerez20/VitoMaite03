@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        
+        <!-- comment <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    </head>
+
+    <body>
+        
+        <header>
+            <nav>
+                <div class="navbar">
+                    <div>Buscar No Premium </div>
+                    <img id="fotoLogo" alt="Foto del Logo" src ='img/logo_without_background.png'>
+
+                    <div class="navbar-items">
+
+                    </div>
+                    <div id="cerrarSesionContainer">  
+                        <a id="mensajeBienvenida"></a>
+                        <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <button type="button" id="volverBtn">Volver</button>
+            <div class="container">
+                <h1>Buscar</h1>
+                <form id="buscarForm">
+                    <div class="genero-container">
+                        <label for="genero">Que busco?</label>
+                        <select id="genero" name="genero">
+                            <option value="">Seleccione una opción</option>
+                            <option value="H">H</option>
+                            <option value="M">M</option>
+                        </select>
+                    </div>
+                    <div class="edad-container">
+                        <label for="edadMin">Edad minima:</label>
+                        <select id="edadMin" name="edadMin">
+                            <!-- Las edades que se pueden seleccionar saldrían aqui -->
+                        </select>
+                        <label for="edadMax">Edad maxima:</label>
+                        <select id="edadMax" name="edadMax">
+                            <!-- Las edades que se pueden seleccionar saldrían aqui -->
+                        </select>
+                    </div>
+                    <div class="ciudad-container">
+                        <label for="ciudad">Ciudad:</label>
+                        <select id="ciudad" name="ciudad">
+                            <option value="">Seleccione una ciudad</option>
+                            <option value="Bilbao">Bilbao</option>
+                            <option value="Donosti">Donosti</option>
+                            <option value="Vitoria">Vitoria</option>
+                        </select>
+                    </div>
+                    <button type="button" id="buscarBtn">Buscar</button>
+                </form>
+            </div> 
+            <!-- aqui va a salir la tabla con la gente que cumpla el formularío -->
+            <div id="contenedorUsuarios"></div>
+        </main>
+        
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/buscarNormal.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </body>
+
+</html>

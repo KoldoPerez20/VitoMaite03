@@ -1,0 +1,184 @@
+header {
+    background-color: #ff5a5f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    
+
+}
+img {
+    height: 50px; /* Ajusta la altura según tus necesidades */
+}
+body {
+    background-color: #f9f9f9;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+footer {
+    background-color: #ff5a5f; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+    /*que se ajuste a la posición directamente*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#botonVolver {
+    position: absolute; /* Posiciona el botón de forma absoluta dentro del main */
+    left: 20px; /* Ajusta la distancia del borde izquierdo */
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+.container {
+    width: 300px;
+    margin: 0 auto;
+    margin :10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.navbar-items {
+    display: flex;
+}
+
+.navbar-items a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-items a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.genero-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el label y el select */
+}
+
+.genero-container label {
+    margin-right: 10px;
+}
+
+.edad-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el label y el select */
+}
+
+.edad-container label {
+    margin-right: 10px;
+}
+
+.ciudad-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el label y el select */
+}
+
+.ciudad-container label {
+    margin-right: 10px;
+}
+.Km-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el label y el select */
+}
+
+.Km-container label {
+    margin-right: 10px;
+}
+
+.tabla-usuarios th , .tabla-likes th, .tabla-aficiones th, .tabla-match th {
+    text-align: center;
+    background-color: #ddd; /* Color de fondo para la cabecera */
+    padding: 10px;
+}
+
+/* Estilos para las celdas de los datos */
+.tabla-likes, .tabla-match{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tabla-usuarios td, .tabla-likes td, .tabla-aficiones td, .tabla-match td  {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde entre celdas */
+}
+#cerrarSesionContainer {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+#mensajeBienvenida {
+    color: white;
+    padding: 5px 10px;
+}
+
+#fotoUsuario {
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+    max-width: 40px;
+    object-fit: cover;
+}
+
+.aficiones-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5spx;
+}
+
+/* Estilo para cada afición */
+.aficiones-container label {
+    display: flex;
+    justify-content: space-between; /* Alinea el texto a la izquierda y el checkbox a la derecha */
+    width: 100%;
+    margin: 5px 0;
+}
+
+#map {
+    height: 600px; /* Altura del mapa */
+    width: 800px;  /* Anchura del mapa */
+    border: 1px solid #ccc; /* Bordes para diferenciarlo */
+}
+
+/* Centramos el mapa en la página (opcional) */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura de la pantalla */
+}

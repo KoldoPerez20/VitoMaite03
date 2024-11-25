@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        
+        <!-- comment <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    </head>
+
+    <body>
+        
+        <header>         
+            <nav>
+                <div class="navbar">
+                    <div>Perfil del Usuario </div>
+                    <img id="fotoLogo" alt="Foto del Logo" src ='img/logo_without_background.png'>
+
+                    <div class="navbar-items">
+
+                    </div>
+                    <div id="cerrarSesionContainer">  
+                        <a id="mensajeBienvenida"></a>
+                        <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <button id="volverBtn" type="button">Volver</button>
+            <div class="container">
+                <h1>Modificar usuario</h1>
+                <form id="modificarUsuarioForm">
+                    <!-- Ciudad -->
+                    <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Selecciona una ciudad</option>
+                        <option value="Vitoria">Vitoria</option>
+                        <option value="Bilbao">Bilbao</option>
+                        <option value="Donosti">Donosti</option>
+                    </select>
+                    <br><br>
+
+                    <!-- Foto -->
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" onchange="">
+                    <div id="nombreFoto"></div>
+                    <img id="fotoNueva" alt="Foto nueva" src =''>
+                    <!-- Botones de acción -->
+                    <button id="modificarUsuarioBtn" type="button">Modificar usuario</button>
+                </form>
+            </div>   
+        </main>
+        
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/modificarPerfil.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </body>
+
+</html>

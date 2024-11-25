@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        
+        <!-- comment <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    </head>
+
+    <body>
+        
+        <header>         
+            <nav>
+                <div class="navbar">
+                    <div>Perfil del Usuario </div>
+                    <img id="fotoLogo" alt="Foto del Logo" src ='img/logo_without_background.png'>
+
+                    <div class="navbar-items">
+
+                    </div>
+                    <div id="cerrarSesionContainer">  
+                        <a id="mensajeBienvenida"></a>
+                        <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <!--<div>Aqui tu zona main </div>-->
+            <button type="button" id="volverBtn">Volver</button>
+            <div class="container">
+                <p>Foto:</p>
+                <img id="fotoDetalles" alt="Foto de los detalles" src =''>
+                <h1 id="nombreDetalles">Nombre del Usuario</h1>
+                <p id="edadDetalles">Edad: </p>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/perfilUsuario.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfJ7gTm7hNW90JtUlPOtZSmi-j2Bji7AE"></script>
+    </body>
+
+</html>

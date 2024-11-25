@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+    </head>
+
+    <body>
+
+        <header>
+            <div> <img src="img/logo_without_background.png" alt="logo"> </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1>Convertir foto a Base64</h1>
+                <form id="formulario">
+                    <!-- Foto -->
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" onchange="">
+                    <div id="nombreFoto"></div>
+
+
+                    <img id="fotoUsuario" alt="Foto del usuario" src =''>
+
+                    <!-- Botones de acción -->
+                    <button id="convertirBase64Btn" type="button">Convertir foto</button>
+
+                    <label> CTRL + SHIFT + I y tiene el Base64 en la consola</label>
+
+
+                </form>
+
+                <div id="contenedorFoto"></div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/convertirBase64.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </body>
+
+</html>

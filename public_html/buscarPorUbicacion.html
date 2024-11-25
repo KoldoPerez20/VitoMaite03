@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <title>VitoMaite</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+        
+        <!-- comment <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    </head>
+
+    <body>
+        
+        <header>
+            <nav>
+                <div class="navbar">
+                    <div>Buscar No Premium </div>
+                    <img id="fotoLogo" alt="Foto del Logo" src ='img/logo_without_background.png'>
+
+                    <div class="navbar-items">
+
+                    </div>
+                    <div id="cerrarSesionContainer">  
+                        <a id="mensajeBienvenida"></a>
+                        <img id="fotoUsuario" alt="Foto del usuario" src =''>
+                        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <button type="button" id="volverBtn">Volver</button>
+            <div class="container">
+                <form id="buscarForm">
+                        <select id="genero" name="genero">
+                            <option value="">Seleccione una opción</option>
+                            <option value="H">H</option>
+                            <option value="M">M</option>
+                        </select>
+                        <div class="Km-container">
+                        <label for="Km">Cuantos KM:</label>
+                        <select id="Km" name="Km">
+                            <!-- Las edades que se pueden seleccionar saldrían aqui -->
+                        </select>
+
+                    </div>
+                    <button type="button" id="buscarBtn">Buscar</button>
+                </form>
+            </div> 
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2024 VitoMaite03. UPV-EHU.</p>
+        </footer>
+        <script src="js/buscarPorUbicacion.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfJ7gTm7hNW90JtUlPOtZSmi-j2Bji7AE"></script>
+    </body>
+
+</html>
